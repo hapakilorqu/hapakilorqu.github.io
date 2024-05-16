@@ -1,0 +1,127 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hapaki Lorenzo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: #fff;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: #444;
+        }
+        .container {
+            padding: 20px;
+        }
+        .section-title {
+            margin-top: 40px;
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #333;
+            text-align: center;
+        }
+        .about, .portfolio, .contact {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .contact form {
+            display: flex;
+            flex-direction: column;
+        }
+        .contact form label {
+            margin-bottom: 10px;
+        }
+        .contact form input, .contact form textarea {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .contact form button {
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .contact form button:hover {
+            background-color: #555;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hapaki Lorenzo</h1>
+        <p>Mechanical Engineering Major & Sustainability Minor</p>
+        <p>Office of Sustainability & Resident Assistant at St. Thomas</p>
+    </header>
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container">
+        <section id="about" class="about">
+            <h2 class="section-title">About Me</h2>
+            <p>Hello! I'm Hapaki Lorenzo, a mechanical engineering major with a minor in sustainability at St. Thomas. I work for the Office of Sustainability and serve as a Resident Assistant in one of the residence halls. I am passionate about integrating sustainable practices into engineering solutions and helping students navigate their college experience.</p>
+        </section>
+        <section id="portfolio" class="portfolio">
+            <h2 class="section-title">Portfolio</h2>
+            <p>Here you can showcase your projects, research, and other works. Add descriptions, images, and links to your work.</p>
+            <!-- Add your portfolio items here -->
+        </section>
+        <section id="contact" class="contact">
+            <h2 class="section-title">Contact</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Hapaki Lorenzo</p>
+    </footer>
+</body>
+</html>
