@@ -4,14 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Ruben Lorenzo · Mechanical Engineer</title>
-<meta name="description" content="Ruben Lorenzo (Hapaki), mechanical engineering senior at the University of St. Thomas (B.S. Dec 2026). Design, R&amp;D, and test: wind tunnels, a hybrid wind turbine, and underwater hardware. St. Paul, MN. Available January 2027.">
+<meta name="description" content="Ruben Lorenzo (Hapaki), mechanical engineering senior at the University of St. Thomas (B.S. Dec 2026). Portfolio: wind-tunnel hardware, a hybrid turbine test rig, underwater ride-vehicle parts, and a PFAS life-cycle paper. St. Paul, MN. Available January 2027.">
 <meta name="author" content="Ruben Lorenzo">
 <meta name="theme-color" content="#0b2a3c">
 <link rel="canonical" href="https://hapakilorqu.github.io/">
 <meta property="og:url" content="https://hapakilorqu.github.io/">
 <meta property="og:type" content="profile">
 <meta property="og:title" content="Ruben Lorenzo · Mechanical Engineer">
-<meta property="og:description" content="Mechanical engineering senior at St. Thomas (Dec 2026). Wind tunnels, a hybrid turbine, and underwater hardware. St. Paul, MN. Available January 2027.">
+<meta property="og:description" content="Mechanical engineering portfolio. Wind tunnels, a hybrid turbine test rig, underwater hardware, and a PFAS life-cycle paper. St. Paul, MN. Available January 2027.">
 <meta property="og:image" content="https://hapakilorqu.github.io/assets/og-image.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -31,8 +31,8 @@
     <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu"><span></span><span></span><span></span></button>
     <nav id="nav-links" class="nav-links">
       <a href="#about">About</a>
-      <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
       <a href="#education">Education</a>
       <a href="#skills">Skills</a>
       <a href="#contact">Contact</a>
@@ -98,10 +98,400 @@
   </div>
 </section>
 
+<!-- PROJECTS -->
+<section id="projects" class="section alt">
+  <div class="wrap">
+    <h2 class="section-title"><span>02</span>Projects at a glance</h2>
+    <p class="glance-intro">The cards are the short version. Each one goes to the write-up.</p>
+    <div class="glance">
+      <a href="#schlieren">
+        <h3>Wind Tunnel Schlieren Module</h3>
+        <p>Project manager. Inlet, diffuser, window FEA, mirror mounts, camera and optics.</p>
+        <p class="tools">SolidWorks · ANSYS Mechanical · DFMEA</p>
+        <p class="status">In build · testing Dec 2026</p>
+      </a>
+      <a href="#seat-post">
+        <h3>Aquaticar Seat Post Redesign</h3>
+        <p>Intern at Sub Sea Systems. Failure diagnosis, redesign, gas-strut sizing.</p>
+        <p class="tools">SolidWorks · ANSI drawings</p>
+        <p class="status">Rev B drawings · Sep 2026</p>
+      </a>
+      <a href="#vawt">
+        <h3>Hybrid VAWT Study</h3>
+        <p>CAD model, scale, test rig, and the test method. With Tidiane Kone.</p>
+        <p class="tools">SolidWorks · 3D printing</p>
+        <p class="status">Testing in progress · no results yet</p>
+      </a>
+      <a href="#roof">
+        <h3>Porous Open-Roof Wind Tunnel Study</h3>
+        <p>Study design, SLA models, tunnel tests, paper and poster.</p>
+        <p class="tools">SLA printing · wind tunnel · manometry</p>
+        <p class="status">Complete · 2025</p>
+      </a>
+      <a href="#pfas">
+        <h3>PFAS Life-Cycle Assessment</h3>
+        <p>Co-author. Life-cycle inventory datasets and the early LCA work.</p>
+        <p class="tools">SimaPro · TRACI 2.0</p>
+        <p class="status">Published · 2026</p>
+      </a>
+      <a href="#thermal">
+        <h3>Thermal &amp; Flow Analysis</h3>
+        <p>Implant heating, and a manifold flow study.</p>
+        <p class="tools">ANSYS CFX on the implant</p>
+        <p class="status">Complete</p>
+      </a>
+      <a href="#cad">
+        <h3>Design &amp; CAD Work</h3>
+        <p>A ball-collecting machine, and a cracker mold for a client.</p>
+        <p class="tools">SolidWorks</p>
+        <p class="status">Complete</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<article class="project" id="schlieren">
+  <div class="wrap">
+    <p class="card-kicker">Senior design · Project manager<br class="mob-br">Team of 4 · <span class="nowrap">Jun 2026 – Dec 2026</span></p>
+    <h2 class="project-title">Wind Tunnel Schlieren Module</h2>
+    <p class="card-sub">Sponsor: Twin City Fan Companies</p>
+    <p>Twin City Fan tests 3D-printed prototypes, and the surface finish changes the airflow. They needed a way to see that. We're building a module that bolts onto their AMCA 210 suction tunnel and comes off again, plus a Schlieren system that shows density gradients over the test airfoils.</p>
+
+    <h3>Requirements</h3>
+    <div class="table-scroll">
+      <table class="data">
+        <thead><tr><th>Requirement</th><th>Value</th></tr></thead>
+        <tbody>
+          <tr><td>Max airflow / pressure</td><td>10,000 CFM (4.72 m³/s) / 10 in. w.g. (2.5 kPa)</td></tr>
+          <tr><td>Configuration</td><td>Suction, fan downstream. Bolt-on and removable.</td></tr>
+          <tr><td>Camera</td><td>At least 300–400 fps, at least 30 s of video, and a 16 in. horizontal wake view.</td></tr>
+          <tr><td>Test articles</td><td>About 200 mm chord airfoils. Easy to swap, rotate, and lock.</td></tr>
+          <tr><td>Budget</td><td>$10,000</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>What I own</h3>
+    <ul>
+      <li>Project manager since October 2026. I built the master task tracker and the DFMEA, and I own the budget and the BOM.</li>
+      <li>The inlet contraction, the diffuser, the side-window FEA, and the mirror mounts and carts.</li>
+      <li>The high-speed camera, lens, and mirrors. Our Schlieren advisor approved that selection.</li>
+      <li>The hand calculations: flow speed, Mach and Reynolds number, pressure drop, contraction ratio, and diffuser length.</li>
+    </ul>
+    <div class="stats four">
+      <div><b>55.3 m/s</b><span>test-section velocity</span></div>
+      <div><b>Mach 0.161</b><span>incompressible regime</span></div>
+      <div><b>Re ≈ 7.5×10<sup>5</sup></b><span>chord-based</span></div>
+      <div><b>1.86 kPa</b><span>contraction Δp (limit 2.5 kPa)</span></div>
+    </div>
+    <p class="calc-note">Calculated design values. Testing is in December 2026. Measured numbers come after that.</p>
+
+    <div class="figs portrait">
+      <figure>
+        <picture>
+          <source type="image/webp" srcset="assets/photos/schlieren-720.webp 720w, assets/photos/schlieren-1205.webp 1205w" sizes="(max-width: 700px) 100vw, 420px">
+          <img src="assets/photos/schlieren-720.jpg" srcset="assets/photos/schlieren-720.jpg 720w, assets/photos/schlieren-1205.jpg 1205w" sizes="(max-width: 700px) 100vw, 520px" alt="3D-printed white inlet contraction with a tall black test-section frame on top, during the Twin City Fan Schlieren module build" width="1205" height="1600" loading="lazy" decoding="async">
+        </picture>
+        <figcaption>3D-printed inlet contraction and test-section frame, during the build.</figcaption>
+      </figure>
+    </div>
+
+    <h3>Decisions</h3>
+    <p>Wall material came out of a calculation, not a guess. Roark plate-bending work showed deflection scales with 1/t<sup>3</sup>, which ruled out thin, unribbed 3D-printed walls. So the inlet is 3D-printed, the diffuser is CNC-cut 3/8 in. plywood, and the test-section windows are clear polymer.</p>
+    <p>I brought the diffuser down from 7° to 3° per wall. That's 6° included.</p>
+    <p>For the camera I chose the Teledyne BFS-U3-04S2M-C. A 1.6 MP model only reached 226 fps, which was too slow, and a Nikon D7000 was stuck at about 250 µs of exposure.</p>
+    <p>The windows are an FEA comparison of 1/4 in. and 3/8 in. total thickness, at the 1.86 kPa design load, fixed frame, with the mesh refined. 3/8 in. is the lead option. Final material is waiting on a polycarbonate versus acrylic clarity test.</p>
+    <div class="table-scroll">
+      <table class="data wide">
+        <thead>
+          <tr><th>Window thickness</th><th>Mesh size</th><th>Nodes</th><th>Max deflection</th><th>Max stress</th></tr>
+        </thead>
+        <tbody>
+          <tr><td data-label="Window">1/4 in.</td><td data-label="Mesh">0.25 in.</td><td data-label="Nodes">90,668</td><td data-label="Max deflection">0.0210 in.</td><td data-label="Max stress">442.4 psi</td></tr>
+          <tr><td data-label="Window">1/4 in.</td><td data-label="Mesh">0.125 in.</td><td data-label="Nodes">924,389</td><td data-label="Max deflection">0.0218 in.</td><td data-label="Max stress">486.3 psi</td></tr>
+          <tr><td data-label="Window">3/8 in.</td><td data-label="Mesh">0.25 in.</td><td data-label="Nodes">90,668</td><td data-label="Max deflection">0.0057 in.</td><td data-label="Max stress">133.6 psi</td></tr>
+          <tr><td data-label="Window">3/8 in.</td><td data-label="Mesh">0.125 in.</td><td data-label="Nodes">667,613</td><td data-label="Max deflection">0.0059 in.</td><td data-label="Max stress">—</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Lessons</h3>
+    <p>I mixed half-angle with included angle, and an Excel RADIANS error on top of that produced a diffuser length of 167.6 in. It was wrong. I write the angle convention down now.</p>
+    <p>Uncured Bondo, a CNC edge-pass mistake, and reprints of the inlet pushed me to a task tracker with one owner per task. That tracker is also how the PM role landed with me in October.</p>
+    <p>Testing is in December 2026. I don't have a measured velocity, a measured pressure drop, or a Schlieren image yet.</p>
+    <a class="back" href="#projects">Back to projects</a>
+  </div>
+</article>
+
+<article class="project alt" id="seat-post">
+  <div class="wrap">
+    <p class="card-kicker">Sub Sea Systems · Mechanical engineering intern · <span class="nowrap">Apr 2026 – Sep 2026</span></p>
+    <h2 class="project-title">Aquaticar Seat Post Redesign</h2>
+    <p class="card-sub">SolidWorks 2022</p>
+    <p>The Aquaticar is an underwater ride vehicle. Its telescoping seat post sits in chlorinated pool water, 5 to 15 feet down, and cycles 20 to 100 times a day.</p>
+
+    <h3>The problem</h3>
+    <p>Wear. One pin was the only thing stopping the tube from rotating. Every time someone sat, the tube turned until the pin hit the D-flat edge, and that edge rounded off.</p>
+    <p>Binding. The bushings were closest together at full extension, which is also where the post has the least resistance to cocking, so it bound off-axis.</p>
+    <p>Lift assist. Add a gas strut without making either of those worse.</p>
+
+    <h3>What I did</h3>
+    <p>I diagnosed both failure modes and took the field measurements. I owned the SolidWorks redesign, picked and sized the gas strut, and worked with the vendor directly. I wrote the revision log and produced Rev B drawings for the bearing, the seat shaft, and the bung.</p>
+
+    <h3>Decisions</h3>
+    <p>Anti-rotation. I compared a round tube with a keyed bushing, a square 316L tube (viable once we had an ASTM A554 negotiated-tolerance quote), and a D-flat on the round shaft. The D-flat won: a flat on the shaft OD, a matching D-profile bushing, and the bore stays round for the strut. The pin goes back to height-lock duty only.</p>
+    <p>Bushings. Three became two. A flanged bushing in the outer tube, and a bearing on the inner shaft.</p>
+    <p>Lift assist. A 316L stainless gas strut, about 45 N, mounted coaxially inside the inner tube so it doesn't add a side load. I left reserve travel so the mechanical stops take the cyclic load, not the strut.</p>
+    <div class="table-scroll">
+      <table class="data wide">
+        <thead><tr><th>Bushing material</th><th>Verdict</th><th>Reason, in chlorinated water</th></tr></thead>
+        <tbody>
+          <tr><td data-label="Material">UHMW-PE</td><td data-label="Verdict">Selected</td><td data-label="Reason">Chlorine-inert, near-zero water absorption</td></tr>
+          <tr><td data-label="Material">Acetal (Delrin)</td><td data-label="Verdict">Rejected</td><td data-label="Reason">Attacked by chlorine</td></tr>
+          <tr><td data-label="Material">Oil-filled bronze</td><td data-label="Verdict">Rejected</td><td data-label="Reason">The oil washes out</td></tr>
+          <tr><td data-label="Material">Brass</td><td data-label="Verdict">Rejected</td><td data-label="Reason">Dezincification</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Metal parts are 316/316L stainless. Seals are EPDM.</p>
+
+    <h3>Lessons</h3>
+    <p>The strut vendor's CAD configurator will happily build part combinations they don't sell. I checked with the sales rep before I modeled it.</p>
+    <p>Cut lengths for a bent tube want the bend angle, which is 180° minus the included angle. I had those swapped once.</p>
+
+    <h3>Across the internship</h3>
+    <ul>
+      <li>Diagnosed anti-rotation wear and off-axis binding in the telescoping seat post of an underwater ride vehicle; led the SolidWorks redesign with a gas strut lift assist, delivering Rev B models and ANSI drawings</li>
+      <li>Reverse-engineered existing components into SolidWorks models; produced drawings for components and cut-length calculations; documented engineering changes</li>
+      <li>Took part in design reviews for new components and parts across the company's underwater vehicles, working with the engineering team, shop technicians and vendors</li>
+      <li>Selected materials and seals for constant chlorinated submersion and sourced them with vendors, tracking quotes and lead times</li>
+    </ul>
+    <p>Alongside the seat post, that drawing work included Rev B drawings for two flanges and a 30T #60 sprocket (ANSI, Size B), cut-length calculations for four formed tubes, a compressor general-arrangement drawing, and an air-receiver fit-check model.</p>
+    <a class="back" href="#projects">Back to projects</a>
+  </div>
+</article>
+
+<article class="project" id="vawt">
+  <div class="wrap">
+    <p class="card-kicker">Independent project · partly funded by NPTV · with Tidiane Kone · ongoing</p>
+    <h2 class="project-title">Hybrid VAWT Study</h2>
+    <p class="card-sub">Wind tunnel test rig · UMN St. Anthony Falls Lab · SolidWorks, 3D printing</p>
+    <p>A hybrid vertical-axis turbine for low wind, in places where the grid isn't reliable. Tidiane and I are extending a published hybrid design (Ahmad et al., 2023, <i>Energy &amp; Environment</i>) so we can test more rotor combinations. The goal is Cp versus tip-speed-ratio curves from the tunnel. Testing is in progress. I don't have results yet.</p>
+
+    <h3>What I did</h3>
+    <ul>
+      <li>Built the SolidWorks model, starting from the published geometry.</li>
+      <li>Chose the model scale from the tunnel blockage limit.</li>
+      <li>Designed the test rig (motor, torque sensor, shaft, bearings) and wrote the test procedure and the bill of materials.</li>
+    </ul>
+    <div class="stats four">
+      <div><b>8.4%</b><span>blockage, SAFL Test Section 1</span></div>
+      <div><b>0.514 m</b><span>outer rotor diameter (S = 7.5)</span></div>
+      <div><b>~900 RPM</b><span>design point, TSR 3 at 8 m/s</span></div>
+      <div><b>~1.09 N·m</b><span>estimated peak torque</span></div>
+    </div>
+    <p class="calc-note">Design estimates, not measurements.</p>
+
+    <div class="figs portrait">
+      <figure>
+        <picture>
+          <source type="image/webp" srcset="assets/photos/vawt-720.webp 720w, assets/photos/vawt-1205.webp 1205w" sizes="(max-width: 700px) 100vw, 420px">
+          <img src="assets/photos/vawt-720.jpg" srcset="assets/photos/vawt-720.jpg 720w, assets/photos/vawt-1205.jpg 1205w" sizes="(max-width: 700px) 100vw, 520px" alt="Hybrid vertical-axis wind turbine prototype being assembled on a lab bench, with gray 3D-printed blades, hubs, and a central bearing" width="1205" height="1600" loading="lazy" decoding="async">
+        </picture>
+        <figcaption>Hybrid VAWT prototype during assembly. No test numbers yet.</figcaption>
+      </figure>
+    </div>
+
+    <h3>Scale</h3>
+    <p>I sized it from the blockage limit, not from a scale I liked. The limit is 10% blockage in SAFL Test Section 1, which is 5 by 5.6 ft.</p>
+    <div class="table-scroll">
+      <table class="data">
+        <thead><tr><th>Scale factor</th><th>Blockage</th><th>Decision</th></tr></thead>
+        <tbody>
+          <tr><td>S = 4</td><td>29.5%</td><td>Rejected</td></tr>
+          <tr><td>S = 7</td><td>9.6%</td><td>Rejected. Too close to the 10% limit.</td></tr>
+          <tr><td>S = 7.5</td><td>8.4%</td><td>Selected</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>How the test runs</h3>
+    <p>A servo holds a fixed RPM while wind speed sweeps from 0 to 8 m/s. A no-wind tare at each RPM takes the friction out of the torque reading.</p>
+    <p>Torque is a static reaction sensor, 2 N·m, on a stiff 3D-printed cage bracket. I dropped a strap mount because it can slip and corrupt the reading.</p>
+    <p>The motor is a Teknic ClearPath servo, about 7.72 N·m peak. Three stepper candidates didn't have the torque at about 900 RPM. St. Anthony Falls loaned the motor and the sensor.</p>
+    <a class="back" href="#projects">Back to projects</a>
+  </div>
+</article>
+
+<article class="project alt" id="roof">
+  <div class="wrap">
+    <p class="card-kicker">UROP · Advisor: Dr. Thomas Shepard · <span class="nowrap">Summer – Fall 2025</span></p>
+    <h2 class="project-title">Porous Open-Roof Wind Tunnel Study</h2>
+    <p class="card-sub">SLA printing, wind tunnel, manometry · University of St. Thomas</p>
+    <p>Open roofs fail under wind uplift. I wanted to know whether a porous surface brings those pressure loads down, and whether SLA printing can produce a pressure-tap model that's actually accurate.</p>
+    <p>I designed the study from scratch, designed and SLA-printed the roof models with internal pressure channels, ran the wind tunnel tests, and wrote the technical paper and the poster.</p>
+
+    <h3>Method</h3>
+    <p>The tunnel is a Flotek 1440, Eiffel type, with a 12 by 12 in. test section. A 7% blockage cap set the model: 8.5 in. span, 6.83 in. chord, 0.46 in. thick, at 1:15 scale and 10° angle of attack.</p>
+    <p>Solid control against a 20% porous surface, at 10 and 20 m/s (Re ≈ 112,000 and 224,000), three or more trials per condition. Sixteen pressure taps run through the printed channels to a water manometer bank.</p>
+
+    <h3>Results</h3>
+    <div class="stats">
+      <div><b>64%</b><span>drop in peak pressure differential, at high wind speed</span></div>
+      <div><b>&lt; 20%</b><span>measurement error on most channels</span></div>
+      <div><b>≥ 1.5 mm</b><span>square channels recommended; under 1.25 mm clogged</span></div>
+    </div>
+    <p>At high wind speeds, 20% porosity cut the peak pressure differential by 64%. The change was strongest at the downstream taps, which is where the load matters, including at y = 128 mm. Uplift came down overall, not only at the peak.</p>
+    <p>A separate channel study showed printed channels under 1.25 mm diameter clogged reliably. Square channels of 1.5 mm or larger are the ones I'd print next.</p>
+
+    <div class="figs">
+      <figure>
+        <picture>
+          <source type="image/webp" srcset="assets/photos/roof-test.webp">
+          <img src="assets/photos/roof-test.jpg" alt="Open-roof model mounted in the wind-tunnel test section, with yellow pressure lines running out to a manometer" width="356" height="268" loading="lazy" decoding="async">
+        </picture>
+        <figcaption>Roof model in the test section.</figcaption>
+      </figure>
+      <figure>
+        <picture>
+          <source type="image/webp" srcset="assets/photos/roof-manometer.webp">
+          <img src="assets/photos/roof-manometer.jpg" alt="A bank of vertical water manometer tubes used to read the roof-model pressure taps" width="352" height="291" loading="lazy" decoding="async">
+        </picture>
+        <figcaption>Water manometer bank.</figcaption>
+      </figure>
+      <figure>
+        <picture>
+          <source type="image/webp" srcset="assets/photos/poster-800.webp 800w, assets/photos/poster-1400.webp 1400w" sizes="(max-width: 700px) 100vw, 360px">
+          <img src="assets/photos/poster-800.jpg" srcset="assets/photos/poster-800.jpg 800w, assets/photos/poster-1400.jpg 1400w" sizes="(max-width: 700px) 100vw, 360px" alt="Ruben Lorenzo smiling beside his poster on wind-tunnel pressure distributions for porous and solid open roofs" width="1600" height="1205" loading="lazy" decoding="async">
+        </picture>
+        <figcaption>Presenting the poster, Wind Tunnel Analysis of Pressure Distributions on Open Roof Structures.</figcaption>
+      </figure>
+      <figure>
+        <picture>
+          <source type="image/webp" srcset="assets/photos/lab-800.webp 800w, assets/photos/lab-1400.webp 1400w" sizes="(max-width: 700px) 100vw, 360px">
+          <img src="assets/photos/lab-800.jpg" srcset="assets/photos/lab-800.jpg 800w, assets/photos/lab-1400.jpg 1400w" sizes="(max-width: 700px) 100vw, 360px" alt="Ruben Lorenzo at the wind-tunnel bench with the pressure-tap roof setup and notes on the whiteboard" width="1600" height="1286" loading="lazy" decoding="async">
+        </picture>
+        <figcaption>At the wind-tunnel bench with the pressure-tap roof model.</figcaption>
+      </figure>
+      <figure>
+        <picture>
+          <source type="image/webp" srcset="assets/photos/roof-channels.webp">
+          <img src="assets/photos/roof-channels.jpg" alt="CAD model of the roof specimen showing internal pressure channels routed to the edge" width="364" height="286" loading="lazy" decoding="async">
+        </picture>
+        <figcaption>Model CAD, with the internal channels.</figcaption>
+      </figure>
+      <figure>
+        <picture>
+          <source type="image/webp" srcset="assets/photos/roof-clog.webp">
+          <img src="assets/photos/roof-clog.jpg" alt="CAD of a stepped test platform with rows of round and square channels in several sizes" width="357" height="331" loading="lazy" decoding="async">
+        </picture>
+        <figcaption>Channel-clogging test platform.</figcaption>
+      </figure>
+    </div>
+    <a class="back" href="#projects">Back to projects</a>
+  </div>
+</article>
+
+<article class="project" id="pfas">
+  <div class="wrap">
+    <p class="card-kicker">Undergraduate research · Advisor: Dr. Alison Ling · <span class="nowrap">Jun 2024 – May 2025</span></p>
+    <h2 class="project-title">Life-Cycle Impacts of Removing PFAS from Wastewater</h2>
+    <p class="card-sub">SimaPro, TRACI 2.0</p>
+    <p>The question was what it costs the environment to remove PFAS, the "forever chemicals," from municipal wastewater effluent and destroy them.</p>
+    <p>I built the life-cycle inventory datasets and did the early LCA work in SimaPro and TRACI 2.0. A specialist co-author led the final LCA modeling. I'm credited for the investigation and for writing the original draft.</p>
+    <h3>What the paper found</h3>
+    <ul>
+      <li>PFAS removal and destruction upgrades could double or triple total greenhouse gas emissions from a wastewater facility.</li>
+      <li>Reactivating and reusing granular activated carbon, and using renewable energy, bring those impacts down.</li>
+      <li>The results are drawn as impact curves, so a regulator or a utility can estimate impact from facility size and technology.</li>
+    </ul>
+    <blockquote class="pub">Ellis, A. C., Ling, A. L., Vermace, R., Lorenzo Quintana, R. H., &amp; Kyser, S. (2026). Life-Cycle Environmental Impacts of Removing and Destroying PFAS From Wastewater Effluent. <i>Water Environment Research</i>, 98, e70508. <a href="https://doi.org/10.1002/wer.70508">doi.org/10.1002/wer.70508</a> (open access)</blockquote>
+    <a class="back" href="#projects">Back to projects</a>
+  </div>
+</article>
+
+<article class="project alt" id="thermal">
+  <div class="wrap">
+    <p class="card-kicker">Thermal and flow analysis</p>
+    <h2 class="project-title">Implant Heating and a Manifold</h2>
+
+    <h3>Wireless neuromodulation implant</h3>
+    <p>I built a transient bioheat model in ANSYS CFX to see how hot a wireless implant gets while it recharges. 3.18 W was the highest power input that stayed clear of deep-tissue necrosis.</p>
+    <div class="figs plot">
+      <figure>
+        <picture>
+          <source type="image/webp" srcset="assets/photos/implant-temp.webp">
+          <img src="assets/photos/implant-temp.jpg" alt="ANSYS temperature field in a tissue cross-section, hottest in a band next to the implant and cooler farther away" width="489" height="338" loading="lazy" decoding="async">
+        </picture>
+        <figcaption>Tissue temperature field around the implant.</figcaption>
+      </figure>
+    </div>
+
+    <h3>Manifold flow</h3>
+    <p>A flow simulation through a manifold, looking for the high-pressure and low-velocity regions.</p>
+    <div class="figs plot">
+      <figure>
+        <picture>
+          <source type="image/webp" srcset="assets/photos/manifold-640.webp 640w, assets/photos/manifold-985.webp 985w" sizes="(max-width: 700px) 100vw, 680px">
+          <img src="assets/photos/manifold-640.jpg" srcset="assets/photos/manifold-640.jpg 640w, assets/photos/manifold-985.jpg 985w" sizes="(max-width: 700px) 100vw, 720px" alt="Simulated velocity field through a manifold with several branching tubes joining a larger chamber" width="985" height="491" loading="lazy" decoding="async">
+        </picture>
+        <figcaption>Velocity field through the manifold.</figcaption>
+      </figure>
+    </div>
+    <a class="back" href="#projects">Back to projects</a>
+  </div>
+</article>
+
+<article class="project" id="cad">
+  <div class="wrap">
+    <p class="card-kicker">SolidWorks · coursework and client work</p>
+    <h2 class="project-title">Design &amp; CAD Work</h2>
+
+    <h3>Ball-collecting machine</h3>
+    <p>I designed and built a machine that picks balls up off the ground, carries them, and deposits them through a chute or a trap door, to engineering requirements I was given.</p>
+    <div class="figs">
+      <figure>
+        <picture>
+          <source type="image/webp" srcset="assets/photos/ball-built.webp">
+          <img src="assets/photos/ball-built.jpg" alt="The built ball-collecting machine on a workbench: red printed arm, black wheels, and a metal base" width="572" height="429" loading="lazy" decoding="async">
+        </picture>
+        <figcaption>Built machine.</figcaption>
+      </figure>
+      <figure>
+        <picture>
+          <source type="image/webp" srcset="assets/photos/ball-cad.webp">
+          <img src="assets/photos/ball-cad.jpg" alt="CAD views of the ball machine arm at its upper and lower angles, and two start positions" width="601" height="479" loading="lazy" decoding="async">
+        </picture>
+        <figcaption>Arm range of motion, and the start positions.</figcaption>
+      </figure>
+    </div>
+
+    <h3>Commercial cracker mold</h3>
+    <p>Independent client work. Dimensional errors on a commercial baking line were coming from gluten contraction. These are the mold I modeled and the dimensioned drawing.</p>
+    <div class="figs">
+      <figure>
+        <picture>
+          <source type="image/webp" srcset="assets/photos/cracker-cad.webp">
+          <img src="assets/photos/cracker-cad.jpg" alt="CAD model of a cracker mold plate with oval cavities" width="571" height="338" loading="lazy" decoding="async">
+        </picture>
+        <figcaption>Redesigned mold.</figcaption>
+      </figure>
+      <figure>
+        <picture>
+          <source type="image/webp" srcset="assets/photos/cracker-drawing.webp">
+          <img src="assets/photos/cracker-drawing.jpg" alt="Dimensioned drawing of the cracker mold, with top and side views of the oval cavities" width="571" height="302" loading="lazy" decoding="async">
+        </picture>
+        <figcaption>Dimensioned drawing.</figcaption>
+      </figure>
+    </div>
+    <a class="back" href="#projects">Back to projects</a>
+  </div>
+</article>
+
 <!-- EXPERIENCE -->
 <section id="experience" class="section alt">
   <div class="wrap">
-    <h2 class="section-title"><span>02</span>Experience</h2>
+    <h2 class="section-title"><span>03</span>Experience</h2>
     <div class="timeline">
       <article class="tl-item">
         <div class="tl-head">
@@ -115,6 +505,7 @@
           <li>Selected materials and seals for constant chlorinated submersion and sourced them with vendors, tracking quotes and lead times</li>
         </ul>
         <p class="tags"><span>SolidWorks</span><span>Drawings</span><span>Materials &amp; seals</span><span>Design reviews</span></p>
+        <p><a href="#seat-post">Seat-post write-up</a></p>
       </article>
       <article class="tl-item">
         <div class="tl-head">
@@ -122,7 +513,7 @@
           <p class="date">Jun 2025 – Sep 2026</p>
         </div>
         <ul>
-          <li>I collected highway-corridor noise with Class 1 sound level meters, used the FHWA Traffic Noise Model for compliance assessments, and mapped receivers in ArcGIS Pro.</li>
+          <li>I collected highway-corridor noise with Class 1 sound level meters, applied the FHWA Traffic Noise Model for compliance assessments, and mapped receiver locations in ArcGIS Pro.</li>
         </ul>
         <p class="tags"><span>Field measurement</span><span>FHWA TNM</span><span>ArcGIS Pro</span></p>
       </article>
@@ -132,131 +523,19 @@
           <p class="date">Aug 2023 – May 2026</p>
         </div>
         <ul>
-          <li>I was the resident advisor for a floor of 30+ students. That meant safety, policy, conflicts, and the calls that came after hours.</li>
+          <li>I was responsible for a residential floor of 30+ students: safety, policy, conflict resolution, and after-hours emergency response.</li>
         </ul>
       </article>
-    </div>
-  </div>
-</section>
-
-<!-- PROJECTS -->
-<section id="projects" class="section">
-  <div class="wrap">
-    <h2 class="section-title"><span>03</span>Projects &amp; Research</h2>
-    <div class="cards">
-      <article class="card feature story">
-        <div class="story-grid">
-          <figure class="story-media">
-            <picture>
-              <source type="image/webp" srcset="assets/photos/schlieren-720.webp 720w, assets/photos/schlieren-1205.webp 1205w" sizes="(max-width: 900px) calc(100vw - 40px), 480px">
-              <img class="shot-schlieren" src="assets/photos/schlieren-720.jpg" srcset="assets/photos/schlieren-720.jpg 720w, assets/photos/schlieren-1205.jpg 1205w" sizes="(max-width: 900px) calc(100vw - 40px), 480px" alt="3D-printed white inlet contraction with a tall black test-section frame on top, the Wind Tunnel Schlieren Module built for Twin City Fan" width="1205" height="1600" loading="lazy" decoding="async">
-            </picture>
-            <figcaption>Inlet contraction and test-section frame</figcaption>
-          </figure>
-          <div class="card-body">
-            <p class="card-kicker">Senior Design · Project Manager · <span class="nowrap">Jun – Dec 2026</span></p>
-            <h3>Wind Tunnel Schlieren Module</h3>
-            <p class="card-sub">Sponsor: Twin City Fan</p>
-            <ul>
-              <li>I lead a four-person team designing and building a bolt-on test section and Schlieren imaging system for Twin City Fan's AMCA 210 suction tunnel, to the sponsor's requirements and a $10,000 budget. I built the DFMEA and prepared the design reviews.</li>
-              <li>Hand calculations for the inlet contraction and the plywood diffuser put test-section flow at 55.3 m/s (Mach 0.16), with a 1.86 kPa pressure drop. The limit was 2.5 kPa.</li>
-              <li>I ran ANSYS Mechanical on the test-section windows with a refined mesh, 1/4 in. against 3/8 in., and picked the high-speed camera, lens, and mirrors.</li>
-            </ul>
-            <div class="stats"><div><b>55.3 m/s</b><span>test-section flow</span></div><div><b>1.86 kPa</b><span>pressure drop (2.5 limit)</span></div><div><b>$10k</b><span>budget</span></div></div>
-          </div>
+      <article class="tl-item">
+        <div class="tl-head">
+          <div><h3>Co-Founder &amp; CEO, Ruta'al</h3><p class="org">2025 – 2026</p></div>
         </div>
-      </article>
-
-      <article class="card feature story story-flip">
-        <div class="story-grid">
-          <figure class="story-media">
-            <picture>
-              <source type="image/webp" srcset="assets/photos/vawt-720.webp 720w, assets/photos/vawt-1205.webp 1205w" sizes="(max-width: 900px) calc(100vw - 40px), 480px">
-              <img class="shot-vawt" src="assets/photos/vawt-720.jpg" srcset="assets/photos/vawt-720.jpg 720w, assets/photos/vawt-1205.jpg 1205w" sizes="(max-width: 900px) calc(100vw - 40px), 480px" alt="Hybrid vertical-axis wind turbine prototype being assembled on a lab bench, with gray 3D-printed blades, hubs, and a central bearing" width="1205" height="1600" loading="lazy" decoding="async">
-            </picture>
-            <figcaption>Prototype, mid-assembly. No test numbers yet.</figcaption>
-          </figure>
-          <div class="card-body">
-            <p class="card-kicker">Independent Project (NPTV-funded) · <span class="nowrap">2026 – Present</span></p>
-            <h3>Hybrid Vertical-Axis Wind Turbine Study</h3>
-            <p class="card-sub">UMN St. Anthony Falls Lab</p>
-            <ul>
-              <li>I'm extending a published hybrid VAWT study so we can test new rotor combinations. I built the SolidWorks model and scaled it to 8.4% blockage for the St. Anthony Falls Lab tunnel.</li>
-              <li>The fixture holds RPM with a servo. A reaction torque sensor sits on a 3D-printed mount, and a no-wind tare at each RPM removes bearing friction. Testing is in progress. I don't have results yet.</li>
-            </ul>
-            <p class="tags"><span>SolidWorks</span><span>Test method</span><span>Fixture design</span><span>3D printing</span></p>
-          </div>
-        </div>
-      </article>
-
-      <article class="card feature story">
-        <div class="story-grid">
-          <div class="stack-shots">
-            <figure class="story-media">
-              <picture>
-                <source type="image/webp" srcset="assets/photos/poster-800.webp 800w, assets/photos/poster-1400.webp 1400w" sizes="(max-width: 900px) calc(100vw - 40px), 480px">
-                <img class="shot-poster" src="assets/photos/poster-800.jpg" srcset="assets/photos/poster-800.jpg 800w, assets/photos/poster-1400.jpg 1400w" sizes="(max-width: 900px) calc(100vw - 40px), 480px" alt="Ruben Lorenzo smiling beside his poster, Wind Tunnel Analysis of Pressure Distributions on Open Roof Structures, comparing porous and solid roofs" width="1600" height="1205" loading="lazy" decoding="async">
-              </picture>
-              <figcaption>Poster session, porous vs. solid roofs</figcaption>
-            </figure>
-            <figure class="story-media">
-              <picture>
-                <source type="image/webp" srcset="assets/photos/lab-800.webp 800w, assets/photos/lab-1400.webp 1400w" sizes="(max-width: 900px) calc(100vw - 40px), 480px">
-                <img class="shot-lab" src="assets/photos/lab-800.jpg" srcset="assets/photos/lab-800.jpg 800w, assets/photos/lab-1400.jpg 1400w" sizes="(max-width: 900px) calc(100vw - 40px), 480px" alt="Ruben Lorenzo at the wind-tunnel bench beside a pressure-tap setup, yellow tubing, and a whiteboard of test notes" width="1600" height="1286" loading="lazy" decoding="async">
-              </picture>
-              <figcaption>Pressure taps, at the tunnel</figcaption>
-            </figure>
-          </div>
-          <div class="card-body">
-            <p class="card-kicker">Research (UROP) · <span class="nowrap">Summer – Fall 2025</span></p>
-            <h3>Open-Roof Wind Tunnel Study</h3>
-            <p class="card-sub">Porous vs. solid surfaces · with Professor Thomas Shepard · University of St. Thomas</p>
-            <ul>
-              <li>I compared solid and 20% porous open-roof models at 10 and 20 m/s (Re ≈ 112,000–224,000). The question was how much a porous roof cuts uplift.</li>
-              <li>The models were SLA-printed with internal pressure taps. At high wind speeds, 20% porosity cut the peak pressure differential by 64%, and the change was strongest at the downstream taps. One of those points was y = 128 mm. Uplift came down overall, not only at the peak.</li>
-              <li>I wrote the technical paper and the poster, sized the models to a 7% blockage limit, and ran at least three trials per condition. Most channels showed error under 20%. Round internal channels under 1.25 mm clogged during printing. Square channels at least 1.5 mm on a side are the ones I'd print next.</li>
-            </ul>
-          </div>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 48 48" width="32" height="32"><path d="M24 40s-14-8-14-19a8 8 0 0 1 14-5 8 8 0 0 1 14 5c0 11-14 19-14 19z"/><path d="M14 24h6l3-5 4 9 3-4h4"/></svg></div>
-        <p class="card-kicker">Medical device · Simulation</p>
-        <h3>Thermal Safety Analysis of a Wireless Neuromodulation Implant</h3>
+        <p>USSD financial services for rural users who don't have a bank account. It runs on a basic phone, with no internet. I built the pitch deck and the brand, presented, and did informal interviews with rural informal workers in Oaxaca.</p>
         <ul>
-          <li>A transient bioheat model in ANSYS CFX of the implant while it recharges. 3.18 W was the highest power input that stayed clear of deep-tissue necrosis.</li>
-        </ul>
-        <p class="tags"><span>ANSYS CFX</span><span>Bioheat transfer</span></p>
-      </article>
-
-      <article class="card">
-        <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 48 48" width="32" height="32"><path d="M24 6c-7 10-12 16-12 23a12 12 0 0 0 24 0c0-7-5-13-12-23z"/><path d="M18 30a6 6 0 0 0 6 6"/></svg></div>
-        <p class="card-kicker">Research · <span class="nowrap">Jun 2024 – May 2025</span></p>
-        <h3>PFAS Wastewater Treatment Research</h3>
-        <p class="card-sub">University of St. Thomas</p>
-        <ul>
-          <li>Life-cycle assessment of removing PFAS from wastewater effluent and destroying it. I'm a co-author on the <i>Water Environment Research</i> paper (2026). The citation is under Publications.</li>
-        </ul>
-        <p class="tags"><span>Life-cycle assessment</span><span>Co-author</span></p>
-      </article>
-
-      <article class="card">
-        <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 48 48" width="32" height="32"><rect x="15" y="6" width="18" height="36" rx="3"/><path d="M21 36h6M19 14h10M19 19h10M19 24h6"/></svg></div>
-        <p class="card-kicker">Past venture · Co-Founder &amp; CEO · <span class="nowrap">2025 – 2026</span></p>
-        <h3>Ruta'al</h3>
-        <ul>
-          <li>USSD financial services for rural users who don't have a bank account.</li>
-          <li>Second place, Social Track, at the Fowler Global Social Innovation Challenge (Feb 2026). Global finalist in San Diego that May. $6,000 in prizes.</li>
-        </ul>
-      </article>
-
-      <article class="card">
-        <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 48 48" width="32" height="32"><path d="M36 18a13 13 0 0 0-23-4M12 30a13 13 0 0 0 23 4"/><path d="M13 6v8h8M35 42v-8h-8"/></svg></div>
-        <p class="card-kicker">Past venture</p>
-        <h3>AquaCycle</h3>
-        <ul>
-          <li>An earlier venture of mine. It's inactive now.</li>
+          <li>4th of 100+ entries, Fowler Business Concept Challenge (Nov 2025).</li>
+          <li>2nd place, Social Track, Fowler Global Social Innovation Challenge campus finals (Feb 2026).</li>
+          <li>Global finalist, Fowler Global Social Innovation Challenge, San Diego (May 2026).</li>
+          <li>$6,000 in total prize money.</li>
         </ul>
       </article>
     </div>
@@ -289,9 +568,9 @@
   <div class="wrap">
     <h2 class="section-title"><span>05</span>Skills</h2>
     <div class="skills">
-      <div class="skill-group"><h3>CAD &amp; Simulation</h3><p class="chips"><span>SolidWorks (GD&amp;T)</span><span>ANSYS Mechanical</span><span>ANSYS Fluent</span><span>ANSYS CFX</span><span>Fusion 360</span><span>MATLAB/Simulink</span><span>LabVIEW</span><span>EES</span><span>SimaPro</span></p></div>
+      <div class="skill-group"><h3>CAD &amp; Simulation</h3><p class="chips"><span>SolidWorks (GD&amp;T)</span><span>ANSYS Mechanical</span><span>ANSYS Fluent</span><span>ANSYS CFX</span><span>SpaceClaim</span><span>Fusion 360</span><span>MATLAB/Simulink</span><span>LabVIEW</span><span>EES</span><span>SimaPro</span></p></div>
       <div class="skill-group"><h3>Quality &amp; Statistics</h3><p class="chips"><span>DFMEA</span><span>Design of Experiments</span><span>Statistical analysis (Minitab)</span><span>Lean Six Sigma (grad coursework)</span></p></div>
-      <div class="skill-group"><h3>Prototyping &amp; Testing</h3><p class="chips"><span>CNC machining</span><span>Welding</span><span>SLA/FDM 3D printing</span><span>Fixtures</span><span>Test method development</span></p></div>
+      <div class="skill-group"><h3>Fabrication &amp; Test</h3><p class="chips"><span>CNC machining</span><span>welding (in progress, fall 2026)</span><span>SLA/FDM 3D printing</span><span>Wind tunnel instrumentation</span><span>Fixtures</span><span>Test method development</span></p></div>
       <div class="skill-group"><h3>Languages</h3><p class="chips"><span>English</span><span>Spanish</span></p><p class="muted small">Bilingual</p></div>
     </div>
   </div>
@@ -303,10 +582,11 @@
     <div><h2 class="section-title"><span>06</span>Publications &amp; Awards</h2></div>
     <div>
       <h3 class="sub-h">Publication</h3>
-      <blockquote class="pub">Ellis, Ling, Vermace, <b>Lorenzo Quintana</b>, Kyser. “Life-Cycle Environmental Impacts of Removing and Destroying PFAS From Wastewater Effluent.” <i>Water Environment Research</i> (2026).</blockquote>
+      <blockquote class="pub">Ellis, A. C., Ling, A. L., Vermace, R., <b>Lorenzo Quintana, R. H.</b>, &amp; Kyser, S. (2026). Life-Cycle Environmental Impacts of Removing and Destroying PFAS From Wastewater Effluent. <i>Water Environment Research</i>, 98, e70508. <a href="https://doi.org/10.1002/wer.70508">doi.org/10.1002/wer.70508</a></blockquote>
       <h3 class="sub-h">Awards &amp; honors</h3>
       <ul class="awards">
-        <li><b>2nd place, Social Track</b>, Fowler Global Social Innovation Challenge, with Ruta'al <span class="muted">(Feb 2026)</span></li>
+        <li><b>4th of 100+ entries</b>, Fowler Business Concept Challenge, with Ruta'al <span class="muted">(Nov 2025)</span></li>
+        <li><b>2nd place, Social Track</b>, Fowler Global Social Innovation Challenge campus finals, with Ruta'al <span class="muted">(Feb 2026)</span></li>
         <li><b>Global Finalist</b>, San Diego, with Ruta'al <span class="muted">(May 2026)</span>; $6,000 in prizes</li>
         <li><b>Dean's List</b> (3x), University of St. Thomas</li>
         <li><b>UROP Research Grant</b> <span class="muted">(Summer 2024, Summer 2025)</span></li>
